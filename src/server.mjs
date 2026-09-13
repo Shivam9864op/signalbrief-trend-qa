@@ -27,6 +27,14 @@ const server = http.createServer(async (req, res) => {
     const url = new URL(req.url, 'http://localhost');
     if (req.method === 'GET' && url.pathname === '/health') return send(res, 200, { ok: true, service: 'signalbrief', items: store.size });
     if (req.method === 'GET' && url.pathname === '/api/trends') return send(res, 200, { results: [...store.values()].sort((a, b) => String(a.trendId).localeCompare(String(b.trendId))) });
+    if (req.method === 'GET' && url.pathname === '/api/export.json') {
+      return send(res, 200, { generatedAt: new Date().toISOString(), syntheticData: true, results: [...store.values()] });
+    }
+    if (req.method === 'GET' && url.pathname === '/api/export.md') {
+      const lines = ['# SignalBrief evidence pack', '', `Generated: ${new Date().toISOString()}`, 'Boundary: synthetic data · local run · no platform login', ''];
+      for (const result of store.values()) lines.push(`## ${result.trendId || 'invalid'} — ${result.status}`, `- Score: ${result.score}/100`, `- Flags: ${result.flags.join(', ') || 'none'}`, `- Trace: ${result.traceId}`, '');
+      return send(res, 200, lines.join('\n'), 'text/markdown; charset=utf-8');
+    }
     if (req.method === 'GET' && url.pathname.startsWith('/api/brief/')) {
       const id = decodeURIComponent(url.pathname.slice('/api/brief/'.length));
       const result = store.get(id);
