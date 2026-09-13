@@ -97,6 +97,7 @@ The images in `docs/` are generated from the checked-in fixtures and verified lo
 | Asset | What it proves |
 | --- | --- |
 | `dashboard.png` | the local queue, score and human-review detail panel |
+| `remote-job-card.png` | a recruiter-facing summary of the workflow QA offer and personal project proof |
 | `console-audit.png` | real CLI audit output and trace IDs |
 | `evidence-pack.png` | a review-ready JSON/Markdown export |
 | `architecture.svg` | the data path and safety boundary |
