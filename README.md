@@ -101,7 +101,7 @@ The images in `docs/` are generated from the checked-in fixtures and verified lo
 | `evidence-pack.png` | a review-ready JSON/Markdown export |
 | `architecture.svg` | the data path and safety boundary |
 | `benchmark-run.png` | honest 10,000-record local benchmark output |
-| `walkthrough.webm` | short local-run walkthrough sequence |
+| `walkthrough.mp4` | short local-run walkthrough sequence |
 
 Every visual carries: **Personal open-source demo · Synthetic data · Local run · Not client work**.
 
