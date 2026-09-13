@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="780" viewBox="0 0 1600 780">
+  <rect width="1600" height="780" fill="#0b1220"/>
+  <text x="80" y="74" fill="#edf4ff" font-family="Arial" font-size="40" font-weight="700">SignalBrief</text>
+  <text x="80" y="113" fill="#91a4be" font-family="Arial" font-size="20">trend-to-post evidence desk · personal demo · synthetic data</text>
+  <g font-family="Arial">
+    <rect x="80" y="220" width="250" height="180" rx="18" fill="#183b5c" stroke="#4d87bb" stroke-width="2"/>
+    <text x="112" y="268" fill="#edf4ff" font-size="25" font-weight="700">Trend input</text>
+    <text x="112" y="307" fill="#b8d5f2" font-size="18">JSON / CSV snapshot</text>
+    <text x="112" y="339" fill="#b8d5f2" font-size="18">or local webhook</text>
+    <text x="112" y="371" fill="#b8d5f2" font-size="18">evidence URL</text>
+    <rect x="440" y="220" width="300" height="180" rx="18" fill="#17243b" stroke="#314c6a" stroke-width="2"/>
+    <text x="475" y="268" fill="#edf4ff" font-size="25" font-weight="700">Normalize</text>
+    <text x="475" y="307" fill="#b5c5d9" font-size="18">canonical topic</text>
+    <text x="475" y="339" fill="#b5c5d9" font-size="18">deduplicate snapshot</text>
+    <text x="475" y="371" fill="#b5c5d9" font-size="18">validate fields</text>
+    <rect x="850" y="180" width="340" height="260" rx="18" fill="#17243b" stroke="#314c6a" stroke-width="2"/>
+    <text x="885" y="228" fill="#edf4ff" font-size="25" font-weight="700">Evidence checks</text>
+    <text x="885" y="272" fill="#b5c5d9" font-size="18">freshness ≤ 72h</text>
+    <text x="885" y="305" fill="#b5c5d9" font-size="18">http(s) evidence</text>
+    <text x="885" y="338" fill="#b5c5d9" font-size="18">claims + safety</text>
+    <text x="885" y="371" fill="#b5c5d9" font-size="18">rights checked</text>
+    <text x="885" y="404" fill="#b5c5d9" font-size="18">region + channels</text>
+    <rect x="1300" y="220" width="220" height="180" rx="18" fill="#1a5a47" stroke="#56d69a" stroke-width="2"/>
+    <text x="1330" y="268" fill="#edf4ff" font-size="25" font-weight="700">Decision</text>
+    <text x="1330" y="307" fill="#d2ffea" font-size="18">brief or review</text>
+    <text x="1330" y="339" fill="#d2ffea" font-size="18">score + flags</text>
+    <text x="1330" y="371" fill="#d2ffea" font-size="18">trace ID</text>
+    <path d="M330 310 H430 M740 310 H840 M1190 310 H1290" fill="none" stroke="#83b8ff" stroke-width="5" marker-end="url(#arrow)"/>
+    <rect x="260" y="540" width="580" height="100" rx="16" fill="#332b16" stroke="#d2ae53" stroke-width="2"/>
+    <text x="296" y="581" fill="#f6d77d" font-size="21" font-weight="700">Human review queue</text>
+    <text x="296" y="613" fill="#ead9a7" font-size="17">fix · approve · export evidence pack</text>
+    <rect x="930" y="540" width="500" height="100" rx="16" fill="#121d31" stroke="#314c6a" stroke-width="2"/>
+    <text x="968" y="581" fill="#edf4ff" font-size="21" font-weight="700">Boundary</text>
+    <text x="968" y="613" fill="#91a4be" font-size="17">no platform login · no scraping · no auto-publish</text>
+    <path d="M1410 405 C1410 470 1080 505 840 540" fill="none" stroke="#d2ae53" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+  <text x="80" y="720" fill="#91a4be" font-family="Arial" font-size="17">Node.js 20+ · deterministic rules · synthetic fixtures · local-only demo</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#83b8ff"/></marker></defs>
+</svg>

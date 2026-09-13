@@ -1,0 +1,16 @@
+{
+  "name": "signalbrief-trend-qa",
+  "version": "1.0.0",
+  "description": "A local, deterministic trend-to-brief evidence desk for social-media teams.",
+  "type": "module",
+  "private": false,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test",
+    "audit": "node src/cli.mjs audit fixtures/trends.json",
+    "brief": "node src/cli.mjs brief fixtures/trends.json",
+    "benchmark": "node src/cli.mjs benchmark",
+    "serve": "node src/server.mjs fixtures/trends.json"
+  },
+  "license": "MIT"
+}

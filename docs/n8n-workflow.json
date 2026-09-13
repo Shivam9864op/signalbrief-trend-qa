@@ -1,0 +1,12 @@
+{
+  "name": "SignalBrief local trend QA (personal demo)",
+  "nodes": [
+    {"parameters": {"httpMethod": "POST", "path": "signalbrief-trends", "responseMode": "responseNode"}, "id": "webhook", "name": "Webhook: trend snapshot", "type": "n8n-nodes-base.webhook", "typeVersion": 2, "position": [0, 0]},
+    {"parameters": {"jsCode": "const item = $json;\nconst required = ['id','topic','capturedAt','region','channels','evidenceUrl'];\nconst missing = required.filter((key) => item[key] === undefined || item[key] === '' || (Array.isArray(item[key]) && item[key].length === 0));\nconst claim = `${item.topic || ''} ${item.draftClaim || ''}`;\nconst flags = [];\nif (missing.length) flags.push(...missing.map((key) => `missing ${key}`));\nif (!/^https?:\\/\\//i.test(item.evidenceUrl || '')) flags.push('evidence:missing');\nif (/\\b(guaranteed|viral)\\b/i.test(claim)) flags.push('claim:human_review');\nreturn [{ json: { ...item, status: flags.length ? 'needs_review' : 'ready_for_brief', flags, localOnly: true } }];"}, "id": "checks", "name": "Code: deterministic checks", "type": "n8n-nodes-base.code", "typeVersion": 2, "position": [260, 0]},
+    {"parameters": {"respondWith": "json", "responseBody": "={{ $json }}", "options": {}}, "id": "respond", "name": "Respond: review result", "type": "n8n-nodes-base.respondToWebhook", "typeVersion": 1, "position": [520, 0]}
+  ],
+  "connections": {"Webhook: trend snapshot": {"main": [[{"node": "Code: deterministic checks", "type": "main", "index": 0}]]}, "Code: deterministic checks": {"main": [[{"node": "Respond: review result", "type": "main", "index": 0}]]}},
+  "active": false,
+  "settings": {},
+  "tags": []
+}

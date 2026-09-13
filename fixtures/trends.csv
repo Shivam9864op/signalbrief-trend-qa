@@ -1,0 +1,3 @@
+id,topic,capturedAt,region,channels,signalType,signalValue,keywords,evidenceUrl,draftClaim,rightsChecked
+trend-001,budget-friendly cafe reels,2026-09-13T10:00:00Z,Bhagalpur,instagram|linkedin,keyword,82,cafe|reels,https://example.test/trends/trend-001,People are asking local cafes for menu details,true
+trend-003,local creator collab prompts,2026-09-13T09:30:00Z,Bhagalpur,instagram,keyword,66,creator|collab,https://example.test/trends/trend-003,Creators want simple collaboration prompts,true

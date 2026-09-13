@@ -1,0 +1,80 @@
+[
+  {
+    "id": "trend-001",
+    "topic": "budget-friendly cafe reels",
+    "capturedAt": "2026-09-13T10:00:00Z",
+    "region": "Bhagalpur",
+    "channels": ["instagram", "linkedin"],
+    "signalType": "keyword",
+    "signalValue": 82,
+    "keywords": ["cafe", "reels"],
+    "evidenceUrl": "https://example.test/trends/trend-001",
+    "draftClaim": "People are asking local cafes for menu details",
+    "rightsChecked": true
+  },
+  {
+    "id": "trend-002",
+    "topic": "monsoon event checklist",
+    "capturedAt": "2026-09-09T08:00:00Z",
+    "region": "Bhagalpur",
+    "channels": ["instagram"],
+    "signalType": "keyword",
+    "signalValue": 71,
+    "keywords": ["event", "checklist"],
+    "evidenceUrl": "https://example.test/trends/trend-002",
+    "draftClaim": "Guaranteed viral turnout for every event",
+    "rightsChecked": true
+  },
+  {
+    "id": "trend-003",
+    "topic": "local creator collab prompts",
+    "capturedAt": "2026-09-13T09:30:00Z",
+    "region": "Bhagalpur",
+    "channels": ["instagram"],
+    "signalType": "keyword",
+    "signalValue": 66,
+    "keywords": ["creator", "collab"],
+    "evidenceUrl": "",
+    "draftClaim": "Creators want simple collaboration prompts",
+    "rightsChecked": true
+  },
+  {
+    "id": "trend-004",
+    "topic": "small shop product explainers",
+    "capturedAt": "2026-09-13T07:00:00Z",
+    "region": "Patna",
+    "channels": ["linkedin"],
+    "signalType": "keyword",
+    "signalValue": 58,
+    "keywords": ["shop", "explainer"],
+    "evidenceUrl": "https://example.test/trends/trend-004",
+    "draftClaim": "A product explainer can be reviewed before posting",
+    "rightsChecked": false
+  },
+  {
+    "id": "trend-005",
+    "topic": "budget-friendly cafe reels",
+    "capturedAt": "2026-09-13T10:00:00Z",
+    "region": "Bhagalpur",
+    "channels": ["instagram", "linkedin"],
+    "signalType": "keyword",
+    "signalValue": 82,
+    "keywords": ["cafe", "reels"],
+    "evidenceUrl": "https://example.test/trends/trend-001-replay",
+    "draftClaim": "People are asking local cafes for menu details",
+    "rightsChecked": true
+  },
+  {
+    "id": "trend-006",
+    "topic": "",
+    "capturedAt": "2026-09-13T10:00:00Z",
+    "region": "Bhagalpur",
+    "channels": ["instagram"],
+    "signalType": "keyword",
+    "signalValue": 40,
+    "keywords": [],
+    "evidenceUrl": "https://example.test/trends/trend-006",
+    "draftClaim": "Incomplete record",
+    "rightsChecked": true
+  }
+]

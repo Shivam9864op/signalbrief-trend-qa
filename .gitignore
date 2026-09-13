@@ -1,0 +1,5 @@
+node_modules/
+*.log
+coverage/
+docs/*.bmp
+docs/test.mp4
